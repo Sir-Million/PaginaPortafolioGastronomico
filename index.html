@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bocetaje</title>
+
+	<link rel="stylesheet" href="src/css/index.css">
+	<link rel="stylesheet" href="src/css/loader.css">
+</head>
+<body>
+
+	<!--  Pantalla de carga  (el contenido entre este comentario y el siguiente sera eliminado una vez la pagina cargue)  -->
+
+    <div class="loader-group">
+        <div class="loader">
+			<img src="src/images/UPTC.png" alt="">
+		</div>
+    </div>
+
+    <script class="script">
+
+        window.addEventListener("load", () => {
+            document.querySelector(".loader-group").classList.add("loader-group--hidden");
+
+            document.querySelector(".loader-group").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader-group"))
+                document.body.removeChild(document.querySelector(".script"))
+            });
+        });
+
+    </script>
+
+    <!--  Pagina  -->
+
+	<header>
+		<h1>
+			Centro Gastronomico UPTC
+		</h1>
+	</header>
+
+	<nav>
+		<a>
+			<p>Inicio</p>
+			<ion-icon name="home-outline"></ion-icon>
+		</a>
+		<a>
+			<p>Recetario</p>
+			<ion-icon name="clipboard-outline"></ion-icon>
+		</a>
+		<a>
+			<p>Eventos & Festivales</p>
+			<ion-icon name="calendar-outline"></ion-icon>
+		</a>
+		<a>
+			<p>Talleres</p>
+			<ion-icon name="git-network-outline"></ion-icon>
+		</a>
+		<a>
+			<p>Reservaciones</p>
+			<ion-icon name="time-outline"></ion-icon>
+		</a>
+	</nav>
+
+	<div class="container">
+		<div class="content">Contenido principal</div>
+	</div>
+
+	<footer>
+		<div class="title">Texto A <span>Texto Resaltado</span></div>
+		<div class="socialbox">
+			<a>Component</a>
+			<a>Component</a>
+			<a>Component</a>
+			<a>Component</a>
+			<a>Component</a>
+		</div>
+	</footer>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+</body>
+</html>

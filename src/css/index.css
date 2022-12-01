@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	width: 100%;
+	padding-top: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+nav {
+	width: 80%;
+	margin: auto;
+	background: #ffcd26;
+
+	padding: 15px 25px;
+	margin: 30px auto;
+	border-radius: 25px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	width: 15%;
+}
+
+nav a ion-icon {
+	width: 100%;
+	font-size: 2rem;
+	bottom: 0;
+}
+
+nav a p {
+	font-weight: 500;
+	font-size: 1;
+	width: fit-content;
+	margin: auto;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	background: beige;
+	border-radius: 25px 25px 0 0;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.678);
+}
+
+.content {
+	width: 80%;
+	margin: 15px auto;
+	height: 200px;
+}
+
+footer {
+	background: black;
+	color: white;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+footer .title {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+footer .title span {
+	font-weight: 500;
+	color: #ffcd26;
+}
+
+.socialbox {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;	
+}
+
+.socialbox a{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
